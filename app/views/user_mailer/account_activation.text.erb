@@ -1,0 +1,6 @@
+Hi, <%= @user.name %>!
+
+Welcome to education application! To activate follow the link:
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
+
